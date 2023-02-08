@@ -3,6 +3,7 @@ border: 2px solid black;
 background-image: linear-gradient(to right, red,green,yellow);
 text-align: center;
 text-decoration: underline;
+width:100%;
 }
 .list{
      border: 2px solid red;
@@ -26,7 +27,7 @@ li{
      margin:19px;
      justify-content: center;
      flex-wrap: wrap;
-     width: 1245px;
+     width: 100%;
 }
 .box{
      border: 2px solid black;
@@ -52,7 +53,7 @@ h2{
      margin: 19px;
      justify-content: center;
      height: 247px;
-     
+     width:100%;
 
 
 }
@@ -75,8 +76,11 @@ h2{
 .main{
      border: 2px solid black;
      display: grid;
-     grid-template-columns: auto auto auto auto auto auto;
-     gap: 100px;
+     grid-template-columns: auto auto auto auto;
+     gap: 10px;
+     height:400px;
+     grid-template-rows: auto auto auto auto;
+     width:100%;
 
 }
 .b1{
@@ -85,7 +89,7 @@ h2{
      color: white;
      text-align: center;
      grid-column-start: 1;
-     grid-column-end: 6;
+     grid-column-end: 5;
      font-weight:400;
 }
 .b2{
@@ -93,8 +97,6 @@ h2{
      background-color: green;
      color: white;
      text-align: center;
-     grid-column-start: 1;
-     grid-column-end: 3;
      font-weight: 200;
 }
 .b3{
@@ -102,8 +104,6 @@ h2{
      background-color:skyblue;
      color: white;
      text-align: center;
-     grid-column-start: 3;
-     grid-column-end: 4;
      font-weight: 200;
 
 
@@ -113,8 +113,6 @@ h2{
      background-color: blue;
      color: white;
      text-align: center;
-     grid-column-start: 4;
-     grid-column-end: 5;
      font-weight: 200;
 
 }
@@ -123,9 +121,9 @@ h2{
      background-color: black;
      color: white;
      text-align: center;
-     grid-row-start: 5;
-     grid-row-end: 6;
-     font-weight: 200;
+     grid-column: 4/5;
+     grid-row-start: 2;
+     grid-row-end: 4;
 
 }
 .b6{
@@ -134,7 +132,7 @@ h2{
      color: white;
      text-align: center;
      grid-column-start: 1;
-     grid-column-end: 6;
+     grid-column-end: 4;
      font-weight: 200;
 }
 .LAST{
